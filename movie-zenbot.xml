@@ -1,5 +1,12 @@
 <context>
   <input pattern="* (есть|купить|взять|получить) * (билет*) * сегодня">
     <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
+    <context>
+    <input pattern="* $tes\No"/>
+    <sample>
+      <item>Да</item>
+      <item>Нет</item>
+    </sample>
+  </context>
   </input>
 </context>
