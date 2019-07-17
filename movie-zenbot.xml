@@ -5,7 +5,7 @@
     </output>
     
       <context>
-        <input pattern="$Yes|No"/>
+        <input pattern="* $Color"/>
           <sample>
             <item>Да, именно так</item>
             <item>Нет</item>
