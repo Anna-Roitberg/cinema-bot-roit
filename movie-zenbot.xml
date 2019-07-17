@@ -5,9 +5,14 @@
 	      	<input pattern="* да|именно|конечно|все так *">
 			<context id="yes">
 				<output value="Сегодня Вы можете посмотреть. List_of_films Выберите, на какой сеанс Вы хотите купить билеты"/>	
-				<input value="10:00 фильм">
+				<input pattern="10:00 фильм">
             	    			<context id="screening">
-                         			<output="Вы хотите пойти на Фильм в 10:00? Сколько билетов Вам нужно"/>
+                         			<output value="Вы хотите пойти на Фильм в 10:00? Сколько билетов Вам нужно"/>
+							<input pattern="(1|2|3|4|5|6|7|8|9)">
+								<contex>
+									<output value="Бронирую для Вас Х билетов на Movie в Time и перевожу на оплату. Удачного просмотра!"/>
+								</contex>
+							</input>
                    			 </context>
                 		</input>			
 			</context>
