@@ -1,5 +1,5 @@
 <context>
   <input pattern="Hello">
-    <output pattern="Hi"/>
+    <output value="Hi"/>
   </input>
 </context>
