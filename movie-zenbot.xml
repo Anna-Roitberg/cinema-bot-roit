@@ -2,11 +2,12 @@
   <input pattern="* (есть|купить|взять|получить) * (билет*) * сегодня">
     <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
       <context>
-      <input pattern="$Colour"/>
-        <sample>
-          <item>Да</item>
-          <item>Нет</item>
-        </sample>
+      <input pattern="* $Color"/>
+    <sample>
+      <item>Green</item>
+      <item>Blue</item>
+      <item>Red</item>
+    </sample>
      </context>
   </input>
 </context>
