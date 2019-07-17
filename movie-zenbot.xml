@@ -1,5 +1,5 @@
 <context>
-	<input pattern="* (билет*|в кино) * сегодня">
+	<input pattern="* (билет*||в кино) * сегодня">
 	    <context id="tickets_today">
 	      <output value="Вы хотите пойти в кино сегодня? Я правильно понял?"/>
 	      	<input pattern="* да|именно|конечно|все так *">
