@@ -1,5 +1,5 @@
 <context>
-  <input pattern="Hello">
-    <output value="Hi"/>
+  <input pattern="есть * билет* сегодня">
+    <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
   </input>
 </context>
