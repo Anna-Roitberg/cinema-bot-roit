@@ -3,8 +3,6 @@
   <output> 
     <item>Вы хотите пойти в кино сегодня?</item>
   </output>
-</input>
-  
   <context>
     <input pattern="$Yes|No"/>
       <sample>
@@ -13,4 +11,5 @@
       </sample>
     </input>
    </context>
+  </input>
  </context>
