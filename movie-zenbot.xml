@@ -3,11 +3,14 @@
     <context id="tickets_today">
       <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
       <input pattern="* да|именно|конечно|все так *">
-    
+      
         <context id="yes">
           <output value="Сколько билетов Вам нужно? Напишите цифрами, пожалуйста"/>
           </context>
-            <context id="number_tickets">
+            <input id="number_tickets" pattern="$Text">
+				    <var name="userNumTickets" value="$Text" scope="user"/>
+
+            <context id="number_tickets_usr">
                <output value="Сейчас посмотрю на какие сеансы есть нужное Вам количество билетов"/>
               <!--inspect tickets -->
                 <output value="Выберите сеанс, на который вы хотите приобрести билеты"/>
@@ -19,6 +22,7 @@
                     </sample>
                   </output>
            </context>
+          </input>
        </input>
         
      </context>
