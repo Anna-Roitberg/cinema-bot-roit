@@ -2,7 +2,7 @@
   <input pattern="* (есть|купить|взять|получить) * (билет*) * сегодня">
     <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
       <context>
-      <input pattern="* $Yes_No"/>
+      <input pattern="$Yes_No"/>
         <sample>
           <item>Да</item>
           <item>Нет</item>
