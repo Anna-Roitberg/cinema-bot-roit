@@ -4,4 +4,13 @@
     <item>Вы хотите пойти в кино сегодня?</item>
   </output>
 </input>
-</context>
+  
+  <context>
+    <input pattern="$Yes|No"/>
+      <sample>
+        <item>Да, именно так</item>
+        <item>Нет</item>
+      </sample>
+    </input>
+   </context>
+ </context>
