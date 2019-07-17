@@ -5,7 +5,13 @@
 	      	<input pattern="* да|именно|конечно|все так *">
 			<context id="yes">
 				<output value="Сегодня Вы можете посмотреть:.... Выберите, на какой сеанс Вы хотите купить билеты"/>	
-		 	</context>
+		 	<input value="10.00 фильм">
+            	<context id="screening">
+                <output="Вы хотите пойти на Фильм в 10.00? Сколько билетов Вам нужно"/>
+            </context>
+            </input>
+			
+			</context>
 		</input>	    
 	   </context>
        </input>  
