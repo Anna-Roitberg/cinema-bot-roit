@@ -1,11 +1,12 @@
 <context>
   <input pattern="* (билет*) * сегодня">
-    <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
-    <input pattern="* да|именно|конечно|все так *"/>
+    <context id="tickets_today">
+      <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
+      <input pattern="* да|именно|конечно|все так *"/>
     
-      <context id="yes">
+        <context id="yes">
           <output value="Сколько билетов Вам нужно? Напишите цифрами, пожалуйста"/>
- 
+        </context>
      </context>
   </input>
 </context>
