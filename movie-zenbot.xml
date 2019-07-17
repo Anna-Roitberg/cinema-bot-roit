@@ -4,7 +4,7 @@
 	      <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
 	      	<input pattern="* да|именно|конечно|все так *">
 			<context id="yes">
-				<output value="Сейчас посмотрю сколько билетов есть на какие сеансы"/>>
+				<output value="Сегодня Вы можете посмотреть:.... Выберите, на какой сеанс Вы хотите купить билеты "/>
 						<!-- search in tickets database and output the list "time|movie| number|of avaliable seats"-->	
 					<input value="10.00 фильм"/>
 						<context id="screening">
