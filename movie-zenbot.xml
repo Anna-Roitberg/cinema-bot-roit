@@ -4,11 +4,12 @@
 	      <output value="Вы хотите пойти в кино сегдня? Я правильно понял?"/>
 	      	<input pattern="* да|именно|конечно|все так *">
 			<context id="yes">
-		  		<output value="Сколько билетов Вам нужно? Напишите цифрами, пожалуйста"/>
-					<input pattern="* (1|2|3|4|5|6|7|8|9) *">
+				<output value="Сейчас посмотрю сколько билетов есть на какие сеансы"/>>
+		  		
+						<!-- search in tickets database and output the list "time|movie| number|of avaliable seats"-->	
 			  			<context id="number_tickets">
 							<output value="Выберите сеанс, на который вы хотите приобрести билеты"/>
-								<!---
+								<!--- sample doesn't work for me, maybe some syntax mistake
 								<input pattern="* $Screening">
 								<context> 
 								
@@ -19,6 +20,25 @@
     								</sample>
 								</context>
     								</input> -->
+							<input value="10.00 фильм"/>
+								<context id="screening">
+									<output="вы хотите пойти на Фильм в 10.00? Сколько билетов Вам нужно">
+									<input pattern="* (1|2|3|4|5|6|7|8|9) *">
+										<context id="screening">
+											<output="Итак Вам нужно Х билетов на Фильм на сеанс в time?">
+											<input pattern="* (1|2|3|4|5|6|7|8|9) *">
+												<input pattern="* да|именно|конечно|все так *">
+													<context id="yes">
+														<output value="Спасибо за терпение! Перевожу на оплату">
+		  											</context>
+												</input>
+											</input>
+												
+										
+										</context>
+									</input>
+								</context>	
+							
 						
 						</context>
 		  			</input>
