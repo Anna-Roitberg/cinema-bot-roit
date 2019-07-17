@@ -6,13 +6,6 @@
       
         <context id="yes">
           <output value="Сколько билетов Вам нужно? Напишите цифрами, пожалуйста"/>
-           <!--  
-            <input id="number_tickets" pattern="$Text">
-		<var name="userNumTickets" value="$Text" scope="user"/>
-
-            	<context id="number_tickets_usr">
-               		<output value="Сейчас посмотрю на какие сеансы есть нужное Вам количество билетов"/>
-              <!--inspect tickets using "userNumTickets" value="$Text"-->
 			<input pattern="\d">
                 		<output value="Выберите сеанс, на который вы хотите приобрести билеты"/>
                   			<output>
