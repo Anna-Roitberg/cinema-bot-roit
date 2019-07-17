@@ -12,7 +12,7 @@
 
             	<context id="number_tickets_usr">
                		<output value="Сейчас посмотрю на какие сеансы есть нужное Вам количество билетов"/>
-              <!--inspect tickets -->
+              <!--inspect tickets using "userNumTickets" value="$Text"-->
                 		<output value="Выберите сеанс, на который вы хотите приобрести билеты"/>
                   			<output>
                    				<sample>
