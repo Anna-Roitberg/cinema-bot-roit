@@ -1,7 +1,7 @@
-<context>
-    <input id="start_bot" pattern="/start *">
-        <context id="start_bot_use">
-            <output value="Привет! Я робот-кассир. Чем помочь?"/>
-    </input>
-</context>
-    
+<input pattern="(hi|hello) *">
+  <output>
+    <item>Hi!</item>
+    <item>Hello!</item>
+    <item>Good morning $UserName!</item>
+  </output>
+</input>
