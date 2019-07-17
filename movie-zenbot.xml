@@ -7,7 +7,7 @@
         <context id="yes">
           <output value="Сколько билетов Вам нужно? Напишите цифрами, пожалуйста"/>
           </context>
-            <context id="тnumber_tickets">
+            <context id="number_tickets">
                <output value="Сейчас посмотрю на какие сеансы есть нужное Вам количество билетов"/>
               <!--inspect tickets -->
                 <output value="Выберите сеанс, на который вы хотите приобрести билеты"/>
@@ -18,6 +18,7 @@
                       <item value="14.00 - Самый смешной фильм"/>
                     </sample>
                   </output>
+           </context>
        </input>
         
      </context>
