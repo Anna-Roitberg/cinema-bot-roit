@@ -1,0 +1,29 @@
+<context>
+    <input id="start_bot" pattern="/start *">
+        <context id="start_bot_use">
+            <output>
+                <item>Привет! Я робот-кассир. Чем помочь?</item>
+                <item>"Привет! Я - кассир в лучшем в городе кинотеатре "Весна". Чем могу помочь?</item>
+                <item>Добрый день! Я работаю в кинотеатре "Весна" и постараюсь ответить на  Ваши вопросы</item>
+            </output>
+            
+            <input pattern="есть|купить|взять * билет* * сегодня">
+                
+        <!-- Choose the correct scenario. Let it be need_tickets_today scenario-->
+                <context id="need_tickets_today">
+                <output>
+                    <item>Я правильно понял, что вы хотите сходить в кино сегодня?</item>
+                </output>
+                    <context>
+                        <input pattern="yes_no"/>
+                        <sample>
+                            <item>Да</item>
+                            <item>Нет</item>
+                        </sample>
+                    </context>
+                </context>
+        </context>
+    </input>
+</context>
+
+
