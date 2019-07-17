@@ -1,3 +1,4 @@
+<context>
 <input pattern="(hi|hello) *">
   <output>
     <item>Hi!</item>
@@ -5,3 +6,4 @@
     <item>Good morning $UserName!</item>
   </output>
 </input>
+</context>
