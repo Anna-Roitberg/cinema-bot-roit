@@ -1,16 +1,15 @@
 <context>
   <input pattern="есть|купить|взять|хоч*|хотим|хотят * билет* * сегодня">
-    <output> 
-      <item>Вы хотите пойти в кино сегодня?</item>
-    </output>
+    <output pattern="Вы хотите пойти в кино сегодня?"/>
+
     
-      <context>
-        <input pattern="* $Color"/>
-          <sample>
-            <item>Да, именно так</item>
-            <item>Нет</item>
-          </sample>
-        </input>
-      </context>
+ <context>
+    <input pattern="* $Color"/>
+    <sample>
+      <item>Green</item>
+      <item>Blue</item>
+      <item>Red</item>
+    </sample>
+  </context>
   </input>
 </context>
