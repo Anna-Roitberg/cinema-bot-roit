@@ -1,9 +1,7 @@
 <context>
-<input pattern="(hi|hello) *">
-  <output>
-    <item>Hi!</item>
-    <item>Hello!</item>
-    <item>Good morning $UserName!</item>
+<input pattern="есть|купить|взять|хоч*|хотим|хотят * билет* * сегодня">
+  <output> 
+    <item>Вы хотите пойти в кино сегодня?</item>
   </output>
 </input>
 </context>
